@@ -71,12 +71,12 @@ const Leads = () => {
       </header>
 
       {/* Lead Type Selection */}
-      <div className="flex justify-center gap-4 mb-4">
+      <div className="flex justify-center gap-4  mb-4">
         <select
           id="leadType"
           value={leadType}
           onChange={(e) => setLeadType(e.target.value as "writerLead" | "readerLead" | "serviceLead")}
-          className="px-4 py-2 rounded-lg bg-gray-200 text-black border border-gray-300 focus:ring-2 focus:ring-purple-800"
+          className="px-4 py-2 rounded-lg bg-gray-300 text-black border border-gray-300 focus:ring-2 focus:ring-purple-800"
         >
           <option value="writerLead">Writer Lead</option>
           <option value="readerLead">Reader Lead</option>
@@ -113,7 +113,7 @@ const Leads = () => {
         ) : (
           <table className="w-full border-collapse border border-gray-300">
             <thead>
-              <tr className="bg-gray-100">
+              <tr className="bg-blue-400">
                 {leadType === "serviceLead" ? (
                   <>
                     <th className="border border-gray-300 px-4 py-2">Company Name</th>

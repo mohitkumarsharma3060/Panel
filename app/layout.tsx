@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${inter.className} flex min-h-screen`}>
         {/* Sidebar (Fixed) */}
         <aside className="w-72 border-x-white bg-sky-800 backdrop-blur min-h-screen">
-          <div className="flex h-16 items-center gap-2 border px-6 text-white">
+          <div className="flex h-16 items-center gap-2 border-white px-6 text-white">
             <Wallet className="h-6 w-6" />
             <span className="font-bold">Dashboard</span>
           </div>

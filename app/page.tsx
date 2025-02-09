@@ -1,5 +1,4 @@
 "use client"
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { MetricsCard } from "@/components/metrics-card";
@@ -14,13 +13,13 @@ export default function Page() {
           <h1 className="text-2xl font-bold">Overview</h1>
           <div className="text-sm text-muted-foreground">Aug 13, 2023 - Aug 18, 2023</div>
         </div>
-        <Button variant="outline" className="gap-2">
+        <Button variant="ghost" className="gap-2">
           Leads Network
           <ChevronDown className="h-4 w-4" />
         </Button>
       </div>
 
-      <div className="grid gap-4 md:grid-cols-3">
+      <div className="grid gap-4 md:grid-cols-3 ">
         <MetricsCard
           title="Reader Leads"
           value="$74,892"
@@ -38,7 +37,7 @@ export default function Page() {
         />
       </div>
 
-      <Card className="mt-6 p-6">
+      <Card className="mt-6 p-6 bg-white text-black">
         <div className="mb-4 flex items-center justify-between">
           <h2 className="text-lg font-semibold">General Statistics</h2>
           <div className="flex gap-2">
